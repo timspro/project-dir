@@ -1,0 +1,29 @@
+{
+  "name": "@tim-code/project-dir",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./index.cjs",
+  "exports": {
+    "import": "./index.js",
+    "require": "./index.cjs"
+  },
+  "type": "module",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./log.js && node ./log.cjs"
+  },
+  "devDependencies": {
+    "@tim-code/eslint-config": "^0.2.2"
+  },
+  "eslintConfig": {
+    "extends": "@tim-code",
+    "env": {
+      "node": true
+    },
+    "ignorePatterns": "index.cjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
