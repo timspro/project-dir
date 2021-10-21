@@ -1,6 +1,6 @@
 import { dirname } from "path"
 import { fileURLToPath } from "url"
 
-const thisProjectDir = dirname(fileURLToPath(import.meta.url))
-
-export const projectDir = dirname(dirname(dirname(thisProjectDir)))
+export function projectDir(path) {
+  return dirname(fileURLToPath(path))
+}
