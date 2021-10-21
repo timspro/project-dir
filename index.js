@@ -3,4 +3,4 @@ import { fileURLToPath } from "url"
 
 const thisProjectDir = dirname(fileURLToPath(import.meta.url))
 
-export const projectDir = dirname(dirname(thisProjectDir))
+export const projectDir = dirname(dirname(dirname(thisProjectDir)))
