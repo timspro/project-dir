@@ -26,10 +26,7 @@
   },
   "eslintConfig": {
     "extends": "@tim-code",
-    "env": {
-      "node": true,
-      "jest": true
-    },
+    "root": true,
     "ignorePatterns": "index.cjs"
   },
   "babel": {
